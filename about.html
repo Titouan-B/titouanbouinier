@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+	@font-face {
+    src: url("css/fonts/Jack.ttf");
+    font-family: "Jack";
+  }
+
+*{font-family: "Jack";}
+
+	img { max-width: 100% }
+
+    body {
+	background-color: #f7f4ef;
+
+    }
+
+	.rotate {
+		 width: fit-content;
+		 height: fit-content;
+		 display: inline-block;
+		 position: absolute;
+	}
+	.rotate:hover img, .rotate:focus img {
+		 transform: rotate(3deg);
+	}
+	.rotate:hover .text, a:focus .text {
+		 opacity: 1;
+	}
+
+	.text {
+		 filter: drop-shadow(1px 1px 0 black)
+		 drop-shadow(-1px 1px 0 black);
+		 font-family: "Seraphim";
+		 z-index: 99;
+	}
+	:root { overscroll-behavior: none; }
+	html { overflow-Y: scroll; }
+	body { padding: 0; }
+	h1 { margin: 0.5rem 0.5rem 0.25rem 0.5rem; }
+
+	h2 { padding: 10px;
+  		background: #879164;
+  		color: #fff; }
+
+	main { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; max-width: 100%; }
+	section { width: 30rem; max-width: 100%; margin: 1rem; }
+	main a { display: block; 
+		padding: 1rem; 
+		margin: 1.5rem 1rem; 
+		max-width: 100%; 
+		border: 3px double; 
+		font-size: 1.5rem; 
+		text-decoration: none; 
+		text-transform: lowercase; 
+		background: whitesmoke; 
+		opacity: 0.9; }
+
+	a p { font-size: 1rem; margin: 0.25rem 1rem;color: rgb(209, 109, 37); }
+	a time { display: block; margin: 0 0 0.5rem 0; font-size: 0.6em; border: none; padding: 0; text-align: left; }
+	img { display: block; margin:auto; position: sticky; top: 40%; }
+	input { margin-left: 0.5rem; }
+	main a::after {
+		display: block;
+		text-align: right;
+		font-size: 0.6em; 
+		margin-top: 0.5rem;
+	}
+
+
+	.main_text {
+		color: #58412D;
+		text-align: justify;
+		line-height: 125%;
+		font-family: "Jack";
+	}
+
+	.dotted_container {
+	
+		border: 3px dotted #58412D;
+		padding: 10px 10px 10px 20px;
+		margin: 10px 10px 10px -30px;
+	}
+
+	@keyframes diabounce {
+                0%   {top:-10px;}
+                50%  {top:-2px;}
+                100% {top:-10px;}
+	}
+</style>
+
+
+<head>
+  
+    <title>about | SPECIATI.on</title>
+	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+    <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
+
+</head>
+
+
+<body>	
+
+
+
+<center>
+<div style="width: clamp(310px, 85%, 560px);">
+	<header style="margin-top: 30px;width: fit-content;">
+		<a href="0.html" style="color: #58412D; font-size: 1rem;">Home ?</a>
+		<h1 class="text" style="margin: 0px; color: #58412D;font-size: 2em;">SPECIATI.on</h1>
+	</header>
+
+	<img src="images/profile.jpg" class="dotted_container" alt="Me pic" style="width: 40%; margin: 0; position: relative; animation: diabounce 2s infinite ease-in-out;">
+	
+	<div class="main_text dotted_container">
+		Hi ! I'm an Utonia, an avid biology enthusiast (and nerd), doing a PhD in Paris. My domain of expertise is in evolutionnary ecology. I was one of the first humans of the 21st century, and grew along the internet.
+		I like indie pop rock, sweets, nature, and my cat Calypso.
+	</div>
+
+
+
+</div>
+
+</body>
+</html>
